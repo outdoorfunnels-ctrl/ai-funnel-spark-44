@@ -54,8 +54,7 @@ export default function About() {
       {/* Founder Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Mind Behind Appoint Funnels</h2>
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
