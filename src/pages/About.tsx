@@ -52,36 +52,97 @@ export default function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative">
-                <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
-                  <img 
-                    src={founderImage} 
-                    alt="Ziauddin Shah - Founder & CEO" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
-                  <span className="font-semibold">Founder & CEO</span>
+      <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/30 relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+              Meet The Visionary
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+              The Mind Behind Appoint Funnels
+            </h2>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+              {/* Image Column */}
+              <div className="lg:col-span-2 flex justify-center">
+                <div className="relative group">
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/50 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
+                  
+                  {/* Main Image Container */}
+                  <div className="relative">
+                    <div className="w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden border-2 border-primary/20 shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-500">
+                      <img 
+                        src={founderImage} 
+                        alt="Ziauddin Shah - Founder & CEO" 
+                        className="w-full h-full object-cover"
+                      />
+                      {/* Overlay Gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
+                      
+                      {/* Name on Image */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-background">
+                        <h3 className="text-2xl font-bold mb-1">Ziauddin Shah</h3>
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-0.5 bg-primary" />
+                          <span className="text-primary font-medium">Founder & CEO</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Floating Badge */}
+                    <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-lg animate-fade-in">
+                      <span className="text-sm font-bold">🚀 Visionary</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">Ziauddin Shah</h2>
-              <p className="text-primary font-medium mb-6">Founder & CEO</p>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  "My journey into AI-driven business solutions started with a simple belief: every business, regardless of size, deserves access to cutting-edge technology that can transform their growth trajectory."
-                </p>
-                <p>
-                  "At Appoint Funnels, we're not just building AI tools—we're creating opportunities. Our mission is to democratize AI technology and make it accessible, affordable, and effective for businesses worldwide."
-                </p>
-                <p>
-                  "I'm passionate about helping entrepreneurs and business owners scale their operations without the overwhelming complexity. Let's build something amazing together."
-                </p>
+              
+              {/* Content Column */}
+              <div className="lg:col-span-3 space-y-6">
+                <div className="relative">
+                  <div className="absolute -left-4 top-0 text-6xl text-primary/20 font-serif">"</div>
+                  <blockquote className="text-lg sm:text-xl text-foreground font-medium leading-relaxed pl-6 border-l-4 border-primary">
+                    My journey into AI-driven business solutions started with a simple belief: every business, regardless of size, deserves access to cutting-edge technology that can transform their growth trajectory.
+                  </blockquote>
+                </div>
+                
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="leading-relaxed">
+                    At Appoint Funnels, we're not just building AI tools—we're creating opportunities. Our mission is to democratize AI technology and make it accessible, affordable, and effective for businesses worldwide.
+                  </p>
+                  <p className="leading-relaxed">
+                    I'm passionate about helping entrepreneurs and business owners scale their operations without the overwhelming complexity. Let's build something amazing together.
+                  </p>
+                </div>
+                
+                {/* Signature & Stats */}
+                <div className="flex flex-wrap items-center gap-6 pt-4 border-t border-border">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Target className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-foreground">500+</div>
+                      <div className="text-sm text-muted-foreground">Businesses Transformed</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Award className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-foreground">5+ Years</div>
+                      <div className="text-sm text-muted-foreground">Industry Experience</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
