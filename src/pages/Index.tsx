@@ -70,8 +70,8 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6">
-              Scale Your Business with{" "}
-              <span className="text-gradient">AI-Driven Funnels</span>
+              Scale Your Business with<br />
+              AI-Driven Funnels
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
               Leverage AI to streamline your processes, automate outreach, and drive exponential growth without increasing headcount.
