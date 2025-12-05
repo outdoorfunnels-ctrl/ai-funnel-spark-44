@@ -69,7 +69,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(168_80%_35%/0.05),transparent_50%)]" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6">
               Scale Your Business with<br />
               AI-Driven Funnels
             </h1>
