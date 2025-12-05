@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Target, Lightbulb, Users, Award, ArrowRight } from "lucide-react";
+import founderImage from "@/assets/founder.jpg";
 
 const values = [
   {
@@ -50,8 +51,45 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission */}
+      {/* Founder Section */}
       <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
+                  <img 
+                    src={founderImage} 
+                    alt="Ziauddin Shah - Founder & CEO" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
+                  <span className="font-semibold">Founder & CEO</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-foreground mb-2">Ziauddin Shah</h2>
+              <p className="text-primary font-medium mb-6">Founder & CEO</p>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  "My journey into AI-driven business solutions started with a simple belief: every business, regardless of size, deserves access to cutting-edge technology that can transform their growth trajectory."
+                </p>
+                <p>
+                  "At Appoint Funnels, we're not just building AI tools—we're creating opportunities. Our mission is to democratize AI technology and make it accessible, affordable, and effective for businesses worldwide."
+                </p>
+                <p>
+                  "I'm passionate about helping entrepreneurs and business owners scale their operations without the overwhelming complexity. Let's build something amazing together."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
